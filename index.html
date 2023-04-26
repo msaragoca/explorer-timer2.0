@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Focus Timer 2.0</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <script src="./js/index.js" type="module" defer></script>
+    
+  </head>
+  <body>
+    <main>
+      <div id="time-controls">
+        <div class="timer">
+          <span class="minutes">02</span>
+          <span>:</span>
+          <span class="seconds">00</span>
+        </div>
+        <div class="controls">
+          <button class="play">
+            <img src="./assets/img/play.svg" alt="botão play" />
+          </button>
+          <button class="pause hide">
+            <img src="./assets/img/pause.svg" alt="botão pause" />
+          </button>
+          <button class="set">
+            <img src="./assets/img/set.svg" alt="botão definir tempo" />
+          </button>
+          <button class="stop hide">
+            <img src="./assets/img/stop.svg" alt="botão parar" />
+          </button>
+          <button class="addTime">
+            <img src="./assets/img/+.svg" alt="botão para adicionar tempo" />
+          </button>
+          <button class="reduceTime">
+            <img src="./assets/img/-.svg" alt="botão para reduzir tempo" />
+          </button>
+        </div>
+      </div>
+      <div id="sounds">
+        <button class="forest">
+          <img src="./assets/img/forest.svg" alt="botão para iniciar o som de floresta" />
+          <audio class="audioForest" src="./assets/sounds/forest.wav"></audio>
+        </button>
+        <button class="rain">
+          <img src="./assets/img/rain.svg" alt="botão para iniciar o som de chuva" />
+          <audio src="./assets/sounds/rain.wav" class="audioRain"></audio>
+        </button>
+        <button class="coffeeShop">
+          <img src="./assets/img/coffee-shop.svg" alt="botão para iniciar o som de uma cafeteria" />
+          <audio src="./assets/sounds/coffee-shop.wav" class="audioCoffeeShop"></audio>
+        </button>
+        <button class="fireplace">
+          <img src="./assets/img/fireplace.svg" alt="botão para iniciar o som de uma lareira" />
+          <audio src="./assets/sounds/fireplace.wav" class="audioFireplace"></audio>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
